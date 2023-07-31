@@ -12,12 +12,13 @@ int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 if (firstNumber > secondNumber)
 {
-    Console.WriteLine ("max = firstNumber");
+    Console.WriteLine ("max = "+ firstNumber);
 }
 else if (firstNumber < secondNumber)
 {
-    Console.WriteLine ("max = secondNumber");
+    Console.WriteLine ("max = "+ secondNumber);
 }
+
 
 
 
@@ -27,3 +28,18 @@ else if (firstNumber < secondNumber)
 //22 3 9 -> 22
 
 
+Console.WriteLine("Введите первое число");
+int a = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите второе число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите третье число: ");
+int c = Convert.ToInt32(Console.ReadLine());
+
+int max = a;
+if (max < b) max = b;
+if (max < c) max = c;
+{
+    Console.WriteLine ("max = " + max);
+}
